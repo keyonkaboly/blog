@@ -133,7 +133,7 @@ a { color: inherit; }
 .page {
   position: relative;
   width: 100%;
-  max-width: 760px;
+  max-width: 1040px;
   min-height: 60vh;
   margin: 36px auto 80px;
   padding: 64px 64px 56px 104px;
