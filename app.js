@@ -1,7 +1,7 @@
 (() => {
   'use strict';
 
-  const SITE = "keyon's blog";
+  const SITE = "Keyon's Blog";
   const page = document.getElementById('page');
   const menu = document.getElementById('menu');
   const menuBtn = document.getElementById('menu-btn');
