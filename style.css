@@ -321,6 +321,16 @@ a { color: inherit; }
 .empty-state a { color: var(--accent); }
 .empty-state code { font-family: var(--mono); font-size: 0.8em; font-style: normal; }
 
+/* ---------- bottom bar ---------- */
+.bottombar {
+  padding: 18px 16px;
+  border-top: 1px solid var(--paper-edge);
+  text-align: center;
+  font-size: 15px;
+  font-style: italic;
+  color: var(--ink-soft);
+}
+
 /* ---------- small screens ---------- */
 @media (max-width: 640px) {
   body { font-size: 18px; }
