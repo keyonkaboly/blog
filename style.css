@@ -25,6 +25,10 @@ body {
   font: 400 19px/1.65 var(--serif);
   font-optical-sizing: auto;
   -webkit-font-smoothing: antialiased;
+  /* keeps the bottom bar at the bottom of the window on short pages */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 a { color: inherit; }
@@ -128,6 +132,7 @@ a { color: inherit; }
 /* ---------- the page ---------- */
 .page {
   position: relative;
+  width: 100%;
   max-width: 760px;
   min-height: 60vh;
   margin: 36px auto 80px;
@@ -323,12 +328,25 @@ a { color: inherit; }
 
 /* ---------- bottom bar ---------- */
 .bottombar {
-  padding: 18px 16px;
-  border-top: 1px solid var(--paper-edge);
-  text-align: center;
-  font-size: 15px;
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  padding: 22px 16px;
+  background: var(--ink);
+  color: #f3ecdd;
+  border-top: 3px double var(--margin-line);
+  font-size: 16px;
   font-style: italic;
-  color: var(--ink-soft);
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+.bottombar::before, .bottombar::after {
+  content: "";
+  width: 36px;
+  height: 1px;
+  background: rgba(243, 236, 221, 0.35);
 }
 
 /* ---------- small screens ---------- */
@@ -336,7 +354,8 @@ a { color: inherit; }
   body { font-size: 18px; }
   .page {
     margin: 0;
-    min-height: calc(100vh - var(--bar-h));
+    min-height: 0;
+    flex: 1;
     padding: 36px 20px 48px 46px;
     border-width: 0;
     border-radius: 0;
