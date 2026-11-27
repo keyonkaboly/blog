@@ -3,7 +3,7 @@
     {
       "slug": "digital-design-verification",
       "name": "Digital Design and Verification",
-      "count": 0
+      "count": 1
     },
     {
       "slug": "analog-ic-design",
@@ -46,5 +46,13 @@
       "count": 0
     }
   ],
-  "entries": []
+  "entries": [
+    {
+      "id": "2026-11-26-setup-hold-propagation-metastability",
+      "title": "Setup and Hold Time, Propagation Delay and Metastability",
+      "date": "2026-11-26",
+      "section": "digital-design-verification",
+      "path": "entries/2026/11/2026-11-26-setup-hold-propagation-metastability.md"
+    }
+  ]
 }
