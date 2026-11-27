@@ -1,0 +1,50 @@
+{
+  "sections": [
+    {
+      "slug": "digital-design-verification",
+      "name": "Digital Design and Verification",
+      "count": 0
+    },
+    {
+      "slug": "analog-ic-design",
+      "name": "Analog IC Design",
+      "count": 0
+    },
+    {
+      "slug": "signal-integrity",
+      "name": "Signal Integrity",
+      "count": 0
+    },
+    {
+      "slug": "serdes-equalization-clocking",
+      "name": "SerDes, Equalization and Clocking",
+      "count": 0
+    },
+    {
+      "slug": "pcie-cxl-chiplets",
+      "name": "PCIe, CXL and Chiplets",
+      "count": 0
+    },
+    {
+      "slug": "dsp-communications-adcs",
+      "name": "DSP for Communications and ADCs",
+      "count": 0
+    },
+    {
+      "slug": "vlsi-chip-design-flow",
+      "name": "VLSI and Chip Design Flow",
+      "count": 0
+    },
+    {
+      "slug": "gpus-ai-hardware",
+      "name": "GPUs and AI Hardware",
+      "count": 0
+    },
+    {
+      "slug": "datacenter-ai-networking",
+      "name": "Data Center and AI Networking",
+      "count": 0
+    }
+  ],
+  "entries": []
+}

@@ -1,0 +1,11 @@
+[
+  { "slug": "digital-design-verification", "name": "Digital Design and Verification" },
+  { "slug": "analog-ic-design", "name": "Analog IC Design" },
+  { "slug": "signal-integrity", "name": "Signal Integrity" },
+  { "slug": "serdes-equalization-clocking", "name": "SerDes, Equalization and Clocking" },
+  { "slug": "pcie-cxl-chiplets", "name": "PCIe, CXL and Chiplets" },
+  { "slug": "dsp-communications-adcs", "name": "DSP for Communications and ADCs" },
+  { "slug": "vlsi-chip-design-flow", "name": "VLSI and Chip Design Flow" },
+  { "slug": "gpus-ai-hardware", "name": "GPUs and AI Hardware" },
+  { "slug": "datacenter-ai-networking", "name": "Data Center and AI Networking" }
+]
