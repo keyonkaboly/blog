@@ -3,7 +3,7 @@
     {
       "slug": "digital-design-verification",
       "name": "Digital Design and Verification",
-      "count": 2
+      "count": 3
     },
     {
       "slug": "analog-ic-design",
@@ -48,9 +48,18 @@
   ],
   "entries": [
     {
+      "id": "2026-11-27-inside-latches-and-flip-flops",
+      "title": "Writing 2: Inside Latches and Flip Flops",
+      "date": "2026-11-27",
+      "order": 2,
+      "section": "digital-design-verification",
+      "path": "entries/2026/11/2026-11-27-inside-latches-and-flip-flops.md"
+    },
+    {
       "id": "2026-11-27-flip-flop-from-latches",
       "title": "Building a Flip Flop from Two Latches",
       "date": "2026-11-27",
+      "order": 1,
       "section": "digital-design-verification",
       "path": "entries/2026/11/2026-11-27-flip-flop-from-latches.md"
     },
@@ -58,6 +67,7 @@
       "id": "2026-11-26-setup-hold-propagation-metastability",
       "title": "Setup and Hold Time, Propagation Delay and Metastability",
       "date": "2026-11-26",
+      "order": 1,
       "section": "digital-design-verification",
       "path": "entries/2026/11/2026-11-26-setup-hold-propagation-metastability.md"
     }

@@ -103,7 +103,8 @@
     const isThisWeek = isoDate(mondayOf(new Date())) === start;
     const rows = [...days.keys()].sort().map(day => {
       const d = parseDate(day);
-      const items = days.get(day).map(e => `
+      // within a day, read in the order the writings were made
+      const items = days.get(day).slice().sort((a, b) => (a.order || 1) - (b.order || 1)).map(e => `
         <li${e.id === entry.id ? ' class="is-current" aria-current="page"' : ''}>
           <a href="${entryHref(e)}">${esc(e.title)}</a>
           <span class="tag-sm">${esc(sectionName(e.section))}</span>

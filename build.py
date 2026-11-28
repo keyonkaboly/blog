@@ -75,21 +75,27 @@ def main():
         if section not in order:
             errors.append(f"{rel}: unknown section {section!r} (see sections.json)")
 
+        # Several writings on the same day: order 1, 2, 3... (the highest is the newest).
+        order_text = meta.get("order", "1")
+        if not order_text.isdigit():
+            errors.append(f"{rel}: order must be a whole number, got {order_text!r}")
+            order_text = "1"
+
         entry_id = path.stem
         if entry_id in seen:
             errors.append(f"{rel}: same file name as {seen[entry_id]}")
         seen[entry_id] = rel
 
-        entries.append({"id": entry_id, "title": title, "date": day, "section": section, "path": rel})
+        entries.append({"id": entry_id, "title": title, "date": day, "order": int(order_text), "section": section, "path": rel})
 
     if errors:
         print("build failed:", *errors, sep="\n  ", file=sys.stderr)
         sys.exit(1)
 
-    # Newest day first; entries on the same day follow the section order.
+    # Newest first: by date, then the day's later writings, then section order.
     entries.sort(key=lambda e: e["id"])
     entries.sort(key=lambda e: order[e["section"]])
-    entries.sort(key=lambda e: e["date"], reverse=True)
+    entries.sort(key=lambda e: (e["date"], e["order"]), reverse=True)
 
     counts = {s["slug"]: 0 for s in sections}
     for e in entries:

@@ -30,6 +30,7 @@ Keyon sends writing in batches (for example a whole month at once) and says whic
 
    `section` is a slug from `sections.json`. Keep Keyon's words as written; only organize and format them.
    If a piece has no title, write a short plain one from its content.
+   If a day has more than one writing ("Writing 2" etc.), add `order: 2`, `order: 3`... to the later ones; the highest order is treated as the newest.
    Images go next to the entry (for example `entries/2026/11/images/eye.png`) and are linked relatively: `![eye](images/eye.png)`.
 2. Run `python3 build.py`. It rewrites `entries.json` and fails with a list of problems if any front matter is wrong.
 3. Commit and push to `main`. GitHub Pages republishes within a minute or two.
