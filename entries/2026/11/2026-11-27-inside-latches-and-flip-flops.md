@@ -1,5 +1,5 @@
 ---
-title: "Writing 2: Inside Latches and Flip Flops"
+title: "Inside Latches and Flip Flops"
 date: 2026-11-27
 section: digital-design-verification
 order: 2
